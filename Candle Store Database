@@ -1,0 +1,22 @@
+CREATE TABLE candles (id INTEGER PRIMARY KEY, name TEXT, size TEXT, wick TEXT, price INTEGER);
+
+INSERT INTO candles VALUES (1, "ocean breeze", "8oz","flicker", 12);
+INSERT INTO candles VALUES (2, "summer breeze", "8oz","flicker", 15);
+INSERT INTO candles VALUES (3, "spring breeze", "12oz","flicker", 13);
+INSERT INTO candles VALUES (4, "lake breeze", "8oz","flicker", 15);
+INSERT INTO candles VALUES (5, "winter", "8oz","solid", 15);
+INSERT INTO candles VALUES (6, "clean", "8oz","flicker", 15);
+INSERT INTO candles VALUES (7, "cranberry", "8oz","flicker", 15);
+INSERT INTO candles VALUES (8, "rain", "12oz","flicker", 12);
+INSERT INTO candles VALUES (9, "apple pie", "8oz","solid", 15);
+INSERT INTO candles VALUES (10, "peaches", "8oz","flicker", 19);
+INSERT INTO candles VALUES (11, "fresh", "8oz","flicker", 15);
+INSERT INTO candles VALUES (12, "eggs", "8oz","solid", 10);
+INSERT INTO candles VALUES (13, "retro", "8oz","flicker", 15);
+INSERT INTO candles VALUES (14, "burnt", "8oz","flicker", 14);
+INSERT INTO candles VALUES (15, "best ever", "12oz","solid", 15);
+
+SELECT * FROM candles;
+SELECT price FROM candles ORDER BY price DESC;
+SELECT name, size FROM candles;
+SELECT MAX(price) FROM candles;
